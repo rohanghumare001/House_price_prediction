@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>House price prediction India
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+body{
+    background-color: "cyan";            
+}
+.label{
+    font-size: 20px;
+}
+.field{
+    font-size: 20px;
+    width:50%
+}
+        .subfield{ 
+            font-size:15px;
+            color:#FF0060;
+        }
+div{
+    padding:10px;
+    margin-top:10px;
+    margin-left:32%;
+}
+h1{
+    color:#1F6E8C;
+    text-align:center;
+    margin-top:50px;
+    font-size:40px;
+}
+#button{
+    background-color:#1F6E8C;
+    padding:5px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:20px;
+    border-radius:5px;
+    color:white;
+    margin-left:20%;
+}
+    </style>
+    <body>
+        <form action="{{url_for("get_value")}}" method="POST">
+         
+    <h1>House Price Prediction</h1>
+    <br>
+<div>
+    <label for="bedrooms" class='label'><b>Number of bedrooms: </b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg.1 to 11 " name="bedrooms" id="bedrooms" required>
+    <br>
+    <label class='subfield'>Bedrooms: any value</label>
+<br>
+    <br>
+    
+    <label for="bathrooms" class='label'><b>Number of bathrooms:</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1 to 27" name="bathrooms" id="bathrooms" required>
+    <br>
+    <label class='subfield'>Bathroom Value </label>
+    
+<br>
+    <br>
+    
+    <label for="floors" class='label'><b>Number of floors: </b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1 to 3.5 " name="floors" id="floors" required>
+    <br>
+    <label class='subfield'>Floors</label>
+    
+<br>
+    <br>
+    
+    <label for="condition" class='label'><b>Condition of houses:</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1 to 5 " name="condition" id="condition" required>
+    <br>
+    <label class='subfield'>condition value:Average:1, Medium:2, Good:3, Better:4, Best:5 </label>
+    
+<br>
+    
+<br>
+    <br>
+    
+    <label for="schools" class='label'><b>Number of schools nearby:</b></label>
+    <br>
+    <input type="text" class="field" placeholder="eg. 1 to 3" name="schools" id="schools" required>
+    <br>
+    <label class='subfield'>Schools </label>
+    
+<br>
+    
+<br>
+
+    
+    <br>
+    <br>
+    <button type="submit" id="button">Submit</button> 
+</div>  
+</form>
+
+    </body>
+</html>
